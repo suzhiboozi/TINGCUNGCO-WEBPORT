@@ -1,0 +1,214 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+@font-face {
+    font-family: 'Genty';
+    src: url(font/GentyDemo-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Beckan";
+    src: url("../font/Beckan-Personal.otf") format("opentype");
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+
+
+}
+
+:root{
+
+    /* Color */
+    --primary-color: #fbd9cd;
+    --light-color: #FFF6E5;
+    --hot-pink: #e27a9d;
+    --light-pink: #f4b9bc;
+    --hot-hot-pink: #d96a8e;
+    --rose: #B86B77;
+    --china: #a84c66;
+    --light-green: #cfdfc4;
+    --matcha: #90b17a;
+
+    /* font size */
+    --font-size-s: 0.9rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.12rem;
+    --font-size-l: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.3rem;
+
+    /* font weight */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* woah*/
+    --site-max-width: 1600px;
+
+}
+
+/* first welcome */
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    background: #fbd9cd;
+
+  mask: 
+    linear-gradient(0,#0000 100px,#000 0),
+    radial-gradient(100px,#000 calc(100% - 1px),#0000) bottom/185px 200px;
+}
+
+.welcome .welccontent{
+    color: white;
+    text-align: center;
+    transform: translateY(-100px);
+}
+
+.deets{
+    max-width: 10000px;
+    padding: 10px;
+}
+
+h2 {
+    font-family: "Sacramento", cursive;
+    font-weight: 550;
+    font-size: 45px;
+    font-style: normal;
+    color: var(--matcha);
+    transform: translateY(10px);
+}
+
+h3{
+    font-family: "beckan", sans-serif;
+    font-size: 95px;
+    letter-spacing: 0.5px;
+    color: var(--hot-pink);
+}
+
+p {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--matcha);
+    transform: translateY(10px);
+}
+
+body {
+    background-color: #fef3e2;
+}
+
+.zhi-img img{
+    width: 350px;
+    height: auto;
+    border-radius: 1000px;
+    object-fit: cover;
+    border: 4px solid var(--light-green);
+    padding: 5px;
+
+}
+
+.yellow-inner{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 100px;
+    max-width: 1000px;
+    margin: 0% auto;
+}
+
+.yellow-text {
+    text-align: justify;
+    font-size: var(--font-size-n);
+    max-width: 500px;
+}
+
+.meet  {
+    font-family: "sacramento", cursive;
+    font-size: 70px;
+    color: var(--hot-pink);
+}
+
+.zhia   {
+    font-family: "beckan", sans-serif;
+    font-size: 70px;
+    margin: 15px;
+    color: #dd4e7e;
+}
+
+.name {
+    color: #dd4e7e;
+    font-weight: 900;
+}
+
+.he {
+    font-weight: 500;
+}
+
+.btn {
+    display: inline-block;
+    padding: 7px 18px;
+    background-color: var(--light-color);
+    border-radius: 4rem;
+    border: 3px solid var(--hot-pink);
+    font-size: 21px;
+    color: #dd4e7e;
+    font-family: "beckan",sans-serif;
+    margin-top: 20px;
+    transition: 0.3s ease;
+
+}
+
+.btn:hover{
+    color: var(--hot-hot-pink);
+    background: var(--light-pink);
+}
+
+@media (max-width: 768px) {
+
+    .yellow-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .zhi-img img {
+        width: 250px;
+    }
+
+    .yellow-text {
+        font-size: var(--font-size-s);
+        max-width: 100%;
+    }
+
+    .meet,
+    .zhia {
+        font-size: 45px;
+    }
+
+    h3 {
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .box {
+        height: auto;
+        padding: 40px 20px;
+        padding-bottom: 100px;
+    }
+
+    .welcome .welccontent {
+        transform: translateY(0);
+    }
+}

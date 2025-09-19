@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whimzhi | Portfolio</title>
+    <link rel="stylesheet" href="css/d.css">
+    <link rel="stylesheet" href="css/Navbar.css">
+</head>
+
+<body>
+    <header>
+        <div class="section-content">
+        <nav class="navbar section-content">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">Whimzhi</h2>
+            </a>
+
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="navmenu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="About.html" class="nav-link">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Portfolio ></a>
+                        <ul class="dropdownport">
+                            <li><a href="Resume.html">Resume</a></li>
+                            <li><a href="Acad.html">Achievements</a></li>
+                        </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">More ></a>
+                        <ul class="dropdownmore">
+                            <li><a href="Extra.html">Activities</a></li>
+                            <li><a href="Behind.html">Behind the scenes</a></li>
+                        </ul>
+                </li>
+                 <li class="nav-item">
+                    <a href="Contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!--TITLE-->
+        <div class="Title">
+            <div class="bub">
+                <h1 class="fird">Dance</h1>
+                <p class="yuhp">Rock your body!</p>
+            </div>
+        </div>
+
+        <!--IMAGES-->
+            <div class="ssicont">
+                <h1 class="ssit">SSInergy</h1>
+                <div class="ssi">
+                    <img src="dance/acq.jpg" alt="Acquaintanceday.jpg">
+                    <img src="dance/ssi1.jpg" alt="SSInergy Practice">
+                    <img src="dance/ssip1.jpg" alt="SSInergy Practice">
+                    <img src="dance/ssi2.jpg" alt="SSInergy Pictorial">
+                    <img src="dance/ssi.jpg" alt="SSInergy Pictorial">
+                    <img src="dance/s.jpg" alt="SSInergy Practice">
+                    <video src="dance/c2.mp4" loop controls></video>
+                    <video src="dance/c1.mp4" loop controls></video>
+                    <video src="dance/oned.mp4" loop controls></video>
+                </div>
+            </div>
+
+            <div class="PEcont">
+                <div class="school">
+                    <h1 class="schoolt">Choreographed by me</h1>
+                    <div class="PE">
+                        <h2 class="pet">Physical Education</h2>
+                        <video src="dance/pe1.mp4" controls></video>
+                        <video src="dance/pe2.mp4" controls></video>
+                        <img src="dance/pe3.jpg" alt="Cheerdance">
+                    </div>
+
+                    
+                    <div class="hsm">
+                        <h2 class="hsmt">Musical FlashMob</h2>
+                        <img src="dance/hsm.jpg" alt="Classpic.jpg">
+                        <img src="dance/jhs.jpg" alt="HSM.jpg">
+                        <video src="dance/hsm1.mp4" loop controls></video>
+
+                    </div>
+
+                    <div class="lala">
+
+                    <h2 class="lalat">La La Land</h2>
+
+                        <video src="dance/yuh.mp4" loop controls></video>
+
+                        <h3>Behind the Scenes</h3>
+
+                            <img src="dance/bts3.jpeg" alt="BTS.jpg">
+                            <video src="dance/bts1.mp4" loop controls></video>
+                            <video src="dance/bts2.mp4" ></video>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.navmenu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+        });
+    </script>
+
+</body>

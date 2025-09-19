@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Whimzhi | Portfolio</title>
+    <link rel="stylesheet" href="css/Behind.css">
+    <link rel="stylesheet" href="css/Navbar.css">
+</head>
+
+<body>
+    <header>
+        <div class="section-content">
+        <nav class="navbar section-content">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">Whimzhi</h2>
+            </a>
+
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="navmenu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="About.html" class="nav-link">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Portfolio ></a>
+                        <ul class="dropdownport">
+                            <li><a href="Resume.html">Resume</a></li>
+                            <li><a href="Acad.html">Achievements</a></li>
+                        </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">More ></a>
+                        <ul class="dropdownmore">
+                            <li><a href="Extra.html">Activities</a></li>
+                            <li><a href="Behind.html">Behind the scenes</a></li>
+                        </ul>
+                </li>
+                 <li class="nav-item">
+                    <a href="Contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="cont">
+            <!--PHONE-->
+            <div class="phone">
+                <div class="in">
+
+                    <!--Q1-->
+                    
+                    <div class="quest 1">
+                        <p>Why did you choose Computer Science?</p>
+                    </div>
+                    <div class="ans">
+                        <p> I chose to study computer science because i find it extremely rewarding to bring my imaginative creations in action 
+                            through digital projects, from being an idea into functioning program.  It feels 
+                            great to be part of a field where only those in it really understand how thing 
+                            work behind the scene from their everyday life. In addition, this career offers 
+                            the flexibility to work remotely and travel the world is something that excites me.</p>
+                    </div>
+
+                    <!--Q2-->
+
+                    <div class="quest 2">
+                        <p>What inspires you to work or learn?</p>
+                    </div>
+                    <div class="ans">
+                        <p>There is so much to learn in this world, especially in my field. I’m inspired by 
+                            understanding how things work and how they were created, especially with 
+                            evolving technologies. I want to be able to look at something and think, 
+                            "Oh, this was made using this programming language and probably this kind of process." 
+                            It also motivates me that my degree helps me see the technology behind 
+                            everyday things that others use. My curiosity drives me to keep learning.</p>
+                    </div>
+
+                    <!--Q3-->
+
+                    <div class="quest 3">
+                        <p>Where can I keep in touch with you?</p>
+                    </div>
+                    <div class="ans">
+                        <p>You can easily find my contact info on the <a href="Contact.html" class="soc">Contacts</a> page. You can also connect with me on:
+                            <a href="https://github.com/suzhiboozi" target="_blank" class="soc">GitHub</a> and
+                            <a href="https://www.facebook.com/czhiazteeraime.barbazatingcungco/" target="_blank" class="soc">Facebook</a>.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.navmenu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+        });
+    </script>
+
+</body>

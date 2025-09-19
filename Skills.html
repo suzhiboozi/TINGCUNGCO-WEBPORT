@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Whimzhi | Portfolio</title>
+    <link rel="stylesheet" href="css/Skills.css">
+    <link rel="stylesheet" href="css/Navbar.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="section-content">
+        <nav class="navbar section-content">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">Whimzhi</h2>
+            </a>
+
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="navmenu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="About.html" class="nav-link">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Portfolio ></a>
+                        <ul class="dropdownport">
+                            <li><a href="Resume.html">Resume</a></li>
+                            <li><a href="Acad.html">Achievements</a></li>
+                        </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">More ></a>
+                        <ul class="dropdownmore">
+                            <li><a href="Extra.html">Activities</a></li>
+                            <li><a href="Behind.html">Behind the scenes</a></li>
+                        </ul>
+                </li>
+                 <li class="nav-item">
+                    <a href="Contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+
+<!--START-->
+
+<main>
+    <div class="skillmate">
+        <h1 class="headskill">Skill Matrix</h1>
+        <div class="box">
+        <div class="boxx">
+        <table>
+            <tr class="headingz">
+                <th class="skillh">Skills</th>
+                <th>Planning</th>
+                <th>Beginner</th>
+                <th>Intermediate</th>
+                <th>Advance</th>
+                <th>Learning</th>
+            </tr>
+
+            <tr>
+                <td class="w">HTML</td>
+                <td></td>
+                <td>✓</td>
+                <td></td>
+                <td></td>
+                <td>✓</td>
+            </tr>
+
+            <tr>
+                <td class="w">CSS</td>
+                <td></td>
+                <td>✓</td>
+                <td></td>
+                <td></td>
+                <td>✓</td>
+            </tr>
+
+            <tr>
+                <td class="w">C</td>
+                <td></td>
+                <td>✓</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td class="w">Javascript</td>
+                <td>✓</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td class="w">C++</td>
+                <td></td>
+                <td>✓</td>
+                <td></td>
+                <td></td>
+                <td>✓</td>
+            </tr>
+            
+            <tr>
+                <td class="w">Canva Pro</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>✓</td>
+                <td>✓</td>
+            </tr>
+
+            <tr>
+                <td class="w">After Effects</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>✓</td>
+                <td>✓</td>
+            </tr>
+        </table>
+        </div>
+        </div>
+    </div>
+</main>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.navmenu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+        });
+    </script>
+
+</body>

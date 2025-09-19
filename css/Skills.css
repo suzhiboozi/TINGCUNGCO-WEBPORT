@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+@font-face {
+    font-family: 'Genty';
+    src: url(font/GentyDemo-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Beckan";
+    src: url("../font/Beckan-Personal.otf") format("opentype");
+}
+
+:root{
+
+    /* Color */
+    --primary-color: #fbd9cd;
+    --light-color: #FFF6E5;
+    --hot-pink: #e27a9d;
+    --light-pink: #f4b9bc;
+    --rose: #B86B77;
+    --china: #a84c66;
+    --hot-hot-pink: #d96a8e;
+    --light-green: #cfdfc4;
+    --matcha: #90b17a;
+
+    /* font size */
+    --font-size-s: 0.9rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.12rem;
+    --font-size-l: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.3rem;
+
+    /* font weight */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* woah*/
+    --site-max-width: 1600px;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+body{
+    background-color: var(--light-color);
+}
+
+
+.skillmate {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    flex-direction: column;
+}
+
+.headskill {
+    font-family: 'sacramento', cursive;
+    font-size: 5rem;
+    color: var(--hot-hot-pink);
+    margin: 30px;
+    margin-top: 50px;
+}
+
+.box {
+    --r: 50px; /* radius of circles */
+    height: 800px;
+    width: 75rem;
+    aspect-ratio: 1;
+    padding: calc(1.5*var(--r));
+    background: var(--primary-color);
+    mask: 
+    linear-gradient(#000 0 0) no-repeat
+     50%/calc(100% - 2*var(--r)) calc(100% - 2*var(--r)), 
+    radial-gradient(farthest-side,#000 97%,#0000) 
+     0 0/calc(2*var(--r)) calc(2*var(--r)) round;
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    flex-direction: column;
+}
+
+.boxx {
+    --r: 50px; /* radius of circles */
+    height: 700px;
+    width: 70rem;
+    aspect-ratio: 1;
+    padding: calc(1.5*var(--r));
+    background: var(--light-color);
+    mask: 
+    linear-gradient(#000 0 0) no-repeat
+     50%/calc(100% - 2*var(--r)) calc(100% - 2*var(--r)), 
+    radial-gradient(farthest-side,#000 97%,#0000) 
+     0 0/calc(2*var(--r)) calc(2*var(--r)) round;
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    flex-direction: column;
+}
+
+
+
+table {
+    border-radius: 12px;
+    overflow: hidden; 
+}
+
+table, th, td{
+    border: 3px solid var(--hot-pink);
+    border-collapse: collapse;
+}
+
+th, td{
+    text-align: center;
+    padding: 20px;
+}
+
+
+th{
+    font-family: 'beckan',sans-serif;
+    font-size: 30px;
+    color: var(--matcha);
+    letter-spacing: 1px;
+}
+
+td{
+    color: var(--hot-hot-pink);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  .box, .boxx {
+    width: 95%;
+    padding: 1rem;
+    height: auto;
+    margin: 0 auto;
+    background: var(--primary-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .headskill {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  table {
+    width: 100%;
+    border-radius: 12px;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+
+  th, td {
+    padding: 8px 6px;
+    font-size: 14px;
+    word-break: break-word;
+  }
+
+  th {
+    font-size: 16px;
+    color: var(--matcha);
+  }
+
+  td {
+    color: var(--hot-hot-pink);
+    font-weight: 600;
+  }
+
+  /* Make table rows easier to distinguish */
+  tr:nth-child(even) td {
+    background-color: var(--light-color);
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .box, .boxx {
+    width: 85%;
+    padding: 10rem;
+  }
+
+  .headskill {
+    font-size: 3.5rem;
+  }
+
+  th, td {
+    padding: 12px 10px;
+    font-size: 16px;
+  }
+}

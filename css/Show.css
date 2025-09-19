@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+@font-face {
+    font-family: 'Genty';
+    src: url(font/GentyDemo-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Beckan";
+    src: url("../font/Beckan-Personal.otf") format("opentype");
+}
+
+:root{
+
+    /* Color */
+    --primary-color: #fbd9cd;
+    --light-color: #FFF6E5;
+    --hot-pink: #e27a9d;
+    --light-pink: #f4b9bc;
+    --rose: #B86B77;
+    --china: #a84c66;
+    --hot-hot-pink: #d96a8e;
+    --light-green: #cfdfc4;
+    --matcha: #90b17a;
+
+    /* font size */
+    --font-size-s: 0.9rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.12rem;
+    --font-size-l: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.3rem;
+
+    /* font weight */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* woah*/
+    --site-max-width: 1600px;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+body{
+    background-color: var(--light-color);
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bub{
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    width: 30rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem auto;
+}
+
+h1{
+    font-family: "sacramento", cursive;
+    font-size: 7rem;
+    color: var(--matcha);
+}
+
+.fird{
+    transform: translateY(10px);
+    
+}
+
+.yuhp{
+    transform: translateY(-35px);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #e27a9d;
+}
+
+.title{
+    font-family: 'sacramento', cursive;
+    font-size: 5rem;
+    color: var(--hot-hot-pink);
+    display: flex;
+    justify-content: center;
+}
+
+.showcase{
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+}
+
+.videos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.videos video{
+    width: 15rem;
+}
+
+.top, 
+.bot {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.bot{
+    align-items: start;
+    margin-top: 1rem;
+}
+
+#iadk{
+    width: 25rem;
+}
+
+.top video,
+.bot video {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.top video:hover,
+.bot video:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+
+
+    .videos video {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .top, .bot {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #iadk {
+        width: 100%;
+        max-width: 300px;
+    }
+}

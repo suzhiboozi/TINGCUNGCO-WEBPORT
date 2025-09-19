@@ -1,0 +1,191 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+@font-face {
+    font-family: "Beckan";
+    src: url("../font/Beckan-Personal.otf") format("opentype");
+}
+
+
+/* body */
+
+
+body{
+    margin: 0;
+    font-family: "quicksand", sans-serif;
+    background-color: #fef3e2;
+
+}
+
+.container{
+    padding: 20px;
+    text-align: center;
+
+}
+
+.abtme{
+    color: var(--hot-pink);
+    font-size:70px;
+    font-family: "sacramento", cursive;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+/* tamagotchi part */
+
+.tamagotchi{
+    width: 400px;
+    height: 460px;
+    background-color:#cfdfc4;
+    border-radius: 50%/60% 60% 40% 40%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}   
+
+.screen{
+    height: 250px;
+    width: 250px;
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    transform: translateY( 10px);
+}
+
+.screen img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.buttons{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: flex-end;
+}
+
+.buttons div{
+    width: 60px;
+    height: 60px;
+    background-color:var(--hot-pink);
+    border-radius: 50%;
+}
+
+.btncenter{
+    transform: translateY(20px);
+}
+
+.btnleft:hover, .btnright:hover {
+    background-color: #d96a8e;
+    transform: scale(1.1);
+}
+
+.btncenter:hover{
+    background-color: #d96a8e;
+    transform: translateY(20px) scale(1.1);
+}
+
+
+/* abt text */
+
+.about-box{
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    width: 800px;
+    padding: 30px 25px;
+    font-family: "quicksand", sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    color: #a84c66;
+    transform: translateY(50px);
+}
+
+.abtmetext {
+    line-height: 1.3;
+}
+
+.bold-name{
+    font-weight: 800;
+    color: #d96a8e;
+    font-family: 'Beckan', sans-serif;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        padding: 20px 15px;
+        text-align: center;
+    }
+
+    .abtme {
+        font-size: 50px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .tamagotchi {
+        width: 300px;
+        height: auto;
+        padding: 20px 0;
+        border-radius: 50%/60% 60% 40% 40%;
+    }
+
+    .screen {
+        width: 200px;
+        height: 200px;
+    }
+
+    .buttons {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        gap: 20px;
+    }
+
+    .buttons div {
+        width: 35px;
+        height: 35px;
+    }
+
+    .about-box {
+        width: 100%;
+        padding: 30px;
+        font-size: 16px;
+        transform: translateY(0);
+        margin-bottom: 20px;
+    }
+
+    .bold-name {
+        font-size: 20px;
+    }
+
+    .abtmetext {
+        line-height: 1.4;
+    }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Whimzhi | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Navbar.css">
+</head>
+
+<!--head end-->
+
+<body>
+
+    <header>
+        <div class="section-content">
+        <nav class="navbar section-content">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">Whimzhi</h2>
+            </a>
+
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="navmenu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="About.html" class="nav-link">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Portfolio ></a>
+                        <ul class="dropdownport">
+                            <li><a href="Resume.html">Resume</a></li>
+                            <li><a href="Acad.html">Achievements</a></li>
+                        </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">More ></a>
+                        <ul class="dropdownmore">
+                            <li><a href="Extra.html">Activities</a></li>
+                            <li><a href="Behind.html">Behind the scenes</a></li>
+                        </ul>
+                </li>
+                 <li class="nav-item">
+                    <a href="Contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="box">
+        <!--woah-->
+        <section class="welcome" id="home">
+            <div class="welccontent">
+                <div class="deets">
+                    <h2>Welcome!</h2>
+                    <h3>Turning ideas into reality</h3>
+                    <p>Buckle up, while I take you to a journey through my digital playground</p>
+                </div>
+            </div>
+        </section>
+        </div>
+    </main>
+
+<!-- Yellow -->
+
+    <section class="yellow-slide">
+        <div class="yellow-inner">
+            <div class="zhi-img">
+                <img src="img/suzh.jpeg" alt="Suzhi Image">
+            </div>
+            <div class="yellow-text">
+                <h2> <span class="meet">Meet</span> <span class="zhia"> Zhia</span></h2>
+                <p class="he">Hi! my name's <span class="name">Czhiaztee Raime B. Tingcungco</span>, a first-year Bachelor of Science in Computer Science student at Pamantasan ng Lungsod ng Maynila. I'm eager to the fundamentals of programming and to create projects that makes a difference.</p>
+                <a href="Resume.html" class="btn">Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.navmenu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+        });
+    </script>
+
+</body>
+</html>

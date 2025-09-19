@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Whimzhi | Portfolio</title>
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/Navbar.css">
+</head>
+
+<!--head end-->
+
+<body>
+
+    <header>
+        <div class="section-content">
+        <nav class="navbar section-content">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">Whimzhi</h2>
+            </a>
+
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="navmenu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="About.html" class="nav-link">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Portfolio ></a>
+                        <ul class="dropdownport">
+                            <li><a href="Resume.html">Resume</a></li>
+                            <li><a href="Acad.html">Achievements</a></li>
+                        </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">More ></a>
+                        <ul class="dropdownmore">
+                            <li><a href="Extra.html">Activities</a></li>
+                            <li><a href="Behind.html">Behind the scenes</a></li>
+                        </ul>
+                </li>
+                 <li class="nav-item">
+                    <a href="Contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h1 class="abtme">About me </h1>
+                <div class="content">
+                    <div class="tamagotchi">
+                        <div class="screen">
+                            <img src="img/bruh.jpeg" alt="Tamagotchi">
+                        </div>
+<!--buttons-->
+                        <div class="buttons">
+                            <div class="btnleft"></div>
+                            <div class="btncenter"></div>
+                            <div class="btnright"></div>
+                        </div>                        
+                    </div>
+                    
+<!--abt box-->
+
+                    <div class="about-box">
+                        <p class="abtmetext">Hi! my name's <span class="bold-name">Czhiaztee Raime B. Tingcungco</span> , a first-year <span class="bold">Bachelor of Science in Computer Science</span> student at <span class="bold">Pamantasan ng Lungsod ng Maynila. </span>
+                       <br><br>
+                        What drives me to explore Computer science is the thrill of seeing code — words and syntax — come together to create a functioning systems . I am someone who learns best through hands-on activities, thrives on curiosity, and enjoys through digital and creative designs.
+                        <br><br>
+                        I have gathered skills in multimedia editing, especially using <span class="bold">Adobe After Effects</span> for motion graphics and <span class="bold">Canva Pro</span> for custom designs. These tools help  me visualize and creatively express my ideas. which is why I'm particularly interested in <span class="bold">front-end development</span> and hope to deepen my skills in <span class="bold">UI</span> and <span class="bold">website design</span> as I grow in this field.</p>
+                    </div>
+                </div>
+        </div>
+    </main>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.navmenu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+        });
+    </script>
+
+</body>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Whimzhi | Portfolio</title>
+    <link rel="stylesheet" href="css/Contact.css">
+    <link rel="stylesheet" href="css/Navbar.css">
+</head>
+
+<!--head end-->
+
+<body>
+
+    <header>
+        <div class="section-content">
+        <nav class="navbar section-content">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">Whimzhi</h2>
+            </a>
+
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="navmenu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="About.html" class="nav-link">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Portfolio ></a>
+                        <ul class="dropdownport">
+                            <li><a href="Resume.html">Resume</a></li>
+                            <li><a href="Acad.html">Achievements</a></li>
+                        </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">More ></a>
+                        <ul class="dropdownmore">
+                            <li><a href="Extra.html">Activities</a></li>
+                            <li><a href="Behind.html">Behind the scenes</a></li>
+                        </ul>
+                </li>
+                 <li class="nav-item">
+                    <a href="Contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/js/all.min.js"> </script>
+
+    <main>
+
+        <div class="curve"></div>
+
+        <div class="svg-arch-top">
+        <!-- Paste the SVG code here -->
+        <svg viewBox="0 0 1200 150" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M0,0V40C0,90,300,150,600,150S1200,90,1200,40V0Z" fill="#fef3e2" />
+        </svg>
+        </div>
+
+        <section class="contact">
+            <div class="container">
+                <div class="contact-heading">
+                    <h1 class="get"> Get in <span class="touch">touch</span> with me</h1>
+                    <p class="subhead">Or reach me via: <a href="mailto:crbtingcungco2025@plm.edu.ph">crbtingcungco2025@plm.edu.ph</a></p>
+                </div>
+
+                <div class="form-container">
+                    <form action="Contact.html" method="post" class="contact-form">
+                        <div class="input-wrap">
+                            <input class="contact-input" autocomplete="off" name="First Name" id="firstname" type="text" required placeholder="First Name">
+                            <i class="fa-solid fa-address-card icon"></i>
+                        </div>
+
+                        <div class="input-wrap">
+                            <input class="contact-input" autocomplete="off" name="Last Name" id="lastname" type="text" required placeholder="Last Name">
+                            <i class="fa-solid fa-address-card icon"></i>
+                        </div>
+
+                        <div class="input-wrap">
+                            <input class="contact-input" autocomplete="off" name="Email" id="Email" type="email" required placeholder="Email">
+                            <i class="fa-solid fa-envelope icon"></i>
+                        </div>
+
+                        <div class="input-wrap">
+                            <input class="contact-input" autocomplete="off" name="Phone" id="phone" type="tel" required placeholder="Phone Number" pattern="[0-9]{11}">
+                            <i class="fa-solid fa-phone icon"></i>
+                        </div>  
+
+                        <div class="input-wrap">
+                            <p class="purp">Purpose of Contact</p>
+                            <div class="radio">
+                                <input class="radioinput" type="radio" value="" name="contact-reason" id="reason-collab" required>
+                                <label class="radiolabel" for="reason-collab">Collaboration </label>
+                                <input class="radioinput" type="radio" value="" name="contact-reason" id="reason-feedback">
+                                <label class="radiolabel" for="reason-feedback">Feedback </label>
+                                <input class="radioinput" type="radio" value="" name="contact-reason" id="reason-connect">
+                                <label class="radiolabel" for="reason-connect"> Connect </label>
+                            </div>
+                        </div>
+
+                        <div class="input-wrap w-100">
+                            <textarea name="Message" autocomplete="off" class="contact-input" required placeholder="Message"></textarea>
+                            <i class="fa-solid fa-inbox icon"></i>
+                        </div>
+                        
+                        <div class="contact-buttons w-100">
+                            <input type="submit" value="Send message" class="btn">
+                                <script>
+                                const form = document.querySelector('.contact-form');
+
+                                form.addEventListener('submit', function(e) {
+                                    e.preventDefault();
+                                    alert("Thank you for your message!");
+                                    form.reset();
+                                });
+                                </script>
+                        </div>
+                </form>
+                </div>
+
+
+
+            </div>
+        </section>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.navmenu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+        });
+    </script>
+
+</body>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Whimzhi | Portfolio</title>
+    <link rel="stylesheet" href="css/Acad.css">
+    <link rel="stylesheet" href="css/Navbar.css">
+</head>
+
+<body>
+    <header>
+        <div class="section-content">
+        <nav class="navbar section-content">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">Whimzhi</h2>
+            </a>
+
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="navmenu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="About.html" class="nav-link">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Portfolio ></a>
+                        <ul class="dropdownport">
+                            <li><a href="Resume.html">Resume</a></li>
+                            <li><a href="Acad.html">Achievements</a></li>
+                        </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">More ></a>
+                        <ul class="dropdownmore">
+                            <li><a href="Extra.html">Activities</a></li>
+                            <li><a href="Behind.html">Behind the scenes</a></li>
+                        </ul>
+                </li>
+                 <li class="nav-item">
+                    <a href="Contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="guh">
+        <h1 class="erm">Achievements</h1>
+
+        <main class="cont">
+        <!--TABLE-->
+
+            <table>
+                <tr class="hed">
+                    <th>Year</th>
+                    <th>Level</th>
+                    <th>Institution</th>
+                    <th>Honors</th>
+                    <th>Recognition</th>
+                </tr>
+
+                <tr class="em">
+                    <td>2020-2021</td>
+                    <td>Grade 8</td>
+                    <td>Statefields School Incorporated</td>
+                    <td>Year-end Red Honor</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>2021-2022</td>
+                    <td>Grade 9</td>
+                    <td>Statefields School Incorporated</td>
+                    <td>Red Honor</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>2021-2022</td>
+                    <td>Grade 9</td>
+                    <td>Statefields School Incorporated</td>
+                    <td>Reading Comprehension 1st Placer</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>2022-2023</td>
+                    <td>Grade 10</td>
+                    <td>Statefields School Incorporated</td>
+                    <td>Year-end Cream Honor</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>2022-2023</td>
+                    <td>Grade 10</td>
+                    <td>Statefields School Incorporated</td>
+                    <td></td>
+                    <td>Dance | Bodily-Kinesthetic Nominee</td>
+                </tr>
+
+                <tr>
+                    <td>2022-2023</td>
+                    <td>Grade 10</td>
+                    <td>Statefields School Incorporated</td>
+                    <td></td>
+                    <td>Interpersonal  Nominee</td>
+                </tr>
+
+                <tr>
+                    <td>2022-2023</td>
+                    <td>Grade 11</td>
+                    <td>Statefields School Incorporated</td>
+                    <td>Year-end Green Honor</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>2022-2023</td>
+                    <td>Grade 12 — 1st Semester</td>
+                    <td>Statefields School Incorporated</td>
+                    <td>Year-end Cream Honor</td>
+                    <td></td>
+                </tr>
+
+                    <tr>
+                    <td>2022-2023</td>
+                    <td>Grade 10</td>
+                    <td>Statefields School Incorporated</td>
+                    <td></td>
+                    <td>Dance | Bodily-Kinesthetic Nominee</td>
+                </tr>
+            </table>
+        </main>
+    </div>
+    
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.navmenu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+        });
+    </script>
+
+</body>

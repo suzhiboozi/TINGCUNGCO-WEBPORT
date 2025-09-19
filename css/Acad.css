@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+@font-face {
+    font-family: 'Genty';
+    src: url(font/GentyDemo-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Beckan";
+    src: url("../font/Beckan-Personal.otf") format("opentype");
+}
+
+:root{
+
+    /* Color */
+    --primary-color: #fbd9cd;
+    --light-color: #FFF6E5;
+    --hot-pink: #e27a9d;
+    --light-pink: #f4b9bc;
+    --rose: #B86B77;
+    --china: #a84c66;
+    --hot-hot-pink: #d96a8e;
+    --light-green: #cfdfc4;
+    --matcha: #90b17a;
+
+    /* font size */
+    --font-size-s: 0.9rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.12rem;
+    --font-size-l: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.3rem;
+
+    /* font weight */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* woah*/
+    --site-max-width: 1600px;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+body{
+    background-color: var(--light-color);
+}
+
+.guh{
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+.cont{
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.erm{
+    font-family: 'sacramento', cursive;
+    font-size: 5rem;
+    color: var(--hot-hot-pink);
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    overflow: hidden; 
+}
+
+table, th, td{
+    border: 3px solid var(--hot-pink);
+    border-collapse: collapse;
+}
+
+th, td{
+    text-align: center;
+    padding: 15px;
+}
+
+th{
+    font-family: 'beckan',sans-serif;
+    font-size: 30px;
+    color: var(--matcha);
+    letter-spacing: 1px;
+}
+
+
+td{
+    color: var(--hot-hot-pink);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .erm {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .cont {
+        flex-direction: column;
+    }
+
+    table {
+        width: 100%;
+        font-size: 0.6rem;
+    }
+
+    th, td {
+        font-size: 0.7rem;
+        padding: 5px 5px;
+    }
+
+    th {
+        font-size: 1rem;
+    }
+
+    .guh {
+        margin: 1rem auto;
+        width: 80%;
+    }
+
+}

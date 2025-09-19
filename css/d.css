@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+@font-face {
+    font-family: "Beckan";
+    src: url("../font/Beckan-Personal.otf") format("opentype");
+}
+
+:root{
+
+    /* Color */
+    --primary-color: #fbd9cd;
+    --light-color: #FCEACA;
+    --hot-pink: #e27a9d;
+    --light-pink: #f4b9bc;
+    --rose: #B86B77;
+    --china: #a84c66;
+    --hot-hot-pink: #d96a8e;
+    --light-green: #cfdfc4;
+    --matcha: #90b17a;
+    --vomit: #cfdfc4;
+    --main-hue: 47; 
+    --light-green-hsl: var(--main-hue), 17%, 92%;
+
+
+    /* font size */
+    --font-size-s: 0.9rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.12rem;
+    --font-size-l: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.3rem;
+
+    /* font weight */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* woah*/
+    --site-max-width: 1600px;
+
+}
+
+body{
+    background-color: #FFF6E5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+
+
+/* TITLE*/
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bub{
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    width: 30rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem auto;
+}
+
+h1{
+    font-family: "sacramento", cursive;
+    font-size: 7rem;
+    color: var(--matcha);
+}
+
+.fird{
+    transform: translateY(10px);
+    
+}
+
+.yuhp{
+    transform: translateY(-35px);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #e27a9d;
+}
+
+.ssit{
+    text-align: center;
+    font-family: 'beckan', sans-serif;
+    font-size: 7rem;
+    font-weight: 600;
+    color: var(--matcha);
+    margin: 20px;
+}
+
+.schoolt{
+    text-align: center;
+    font-family: 'beckan', sans-serif;
+    font-size: 7rem;
+    font-weight: 600;
+    color: var(--matcha);
+    margin: 20px;  
+}
+
+.pet,
+.lalat,
+.hsmt{
+    font-family: 'sacramento', cursive;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    color: #e27a9d;
+}
+
+h3{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1rem;
+    font-weight: 600;
+    color:#a84c66;
+}
+
+/*CONTAINER*/
+
+.ssicont,
+.PEcont{
+    margin-top: 7rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fbd9cd;
+    mask: linear-gradient(0,#0000 140px,#000 0) 0 70px, radial-gradient(70px,#000 calc(100% - 1px),#0000) 50%/129.5px 140px repeat space
+}
+
+.ssi {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1000px;
+  margin: 3rem auto;
+  justify-content: center;
+}
+
+.PEcont{
+    margin: 3rem auto;
+
+}
+
+/*SIZES*/   
+
+.ssicont img,
+.PEcont img {
+    max-width: 350px;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 8px;
+}
+
+.ssicont video,
+.PEcont video {
+    max-width: 350px;
+    height: auto;
+    margin: 8px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  
+  .bub{
+    width: 25rem;
+  }
+
+  .ssi {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    max-width: 90vw;
+    margin: 2rem auto;
+  }
+
+  .ssicont img,
+  .PEcont img,
+  .ssicont video,
+  .PEcont video {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 1rem auto;
+    display: block;
+  }
+
+  .ssicont,
+  .PEcont {
+    padding: 50px 10px;
+    margin: 2rem auto;
+  }
+
+
+  .pet,
+  .lalat,
+  .hsmt {
+    font-size: 4rem;
+    padding-bottom: 1rem;
+  }
+
+
+  .schoolt,
+  .ssit{
+    font-size: 4rem;
+    margin-top: 2rem;
+  }
+
+  .schoolt{
+    text-align: center;
+    margin: 20px auto;
+    display: block;
+  }
+
+  h2.pet,
+  h2.lalat,
+  h2.hsmt {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+}

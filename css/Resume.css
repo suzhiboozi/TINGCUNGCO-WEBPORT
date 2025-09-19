@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap');
+
+@font-face {
+    font-family: "Genty";
+    src: url("../font/GentyDemo-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Beckan";
+    src: url("../font/Beckan-Personal.otf") format("opentype");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+:root{
+
+    /* Color */
+    --primary-color: #fbd9cd;
+    --light-color: #FFF6E5;
+    --hot-pink: #e27a9d;
+    --light-pink: #f4b9bc;
+    --rose: #B86B77;
+    --china: #a84c66;
+    --hot-hot-pink: #d96a8e;
+    --light-green: #cfdfc4;
+    --matcha: #90b17a;
+
+    /* font size */
+    --font-size-s: 0.9rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.12rem;
+    --font-size-l: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.3rem;
+
+    /* font weight */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* woah*/
+    --site-max-width: 1600px;
+
+}
+
+body{
+    background-color: #FFF6E5;
+}
+
+.profile-container{
+    text-align: center;
+    padding-left: 70px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.profile-img{
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    border: 3px solid #e27a9d;
+}
+
+.resume{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(9, 1fr);
+    gap:  10px;
+    max-width: 1200px;
+    margin: 0 auto ;
+    padding: 50px;
+
+}
+
+
+
+.summary-container{
+    grid-row: span 2 / span 2;
+}
+
+.contacts-container{
+    grid-row: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+
+.contacts-container a{
+    color: #90b17a;
+}
+
+.contacts-container a:hover{
+    color: #cfdfc4;
+}
+
+
+.skills-container{
+    grid-row: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 5;
+}
+
+.summary-container,
+.contacts-container,
+.skills-container, 
+.education-container,
+.experiences-container,
+.honors-container{
+    border: 3px solid var(--light-pink);
+    border-radius: 20px;
+    background-color: #FFF6E5;
+    text-align: justify;
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--hot-hot-pink);
+    padding: 20px 50px;
+    margin: 10px;
+}
+
+.uhm{
+    font-family: 'beckan', sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+    color: var(--matcha);
+}
+
+.skills-container ul{
+    list-style: none;
+    padding: 20px;
+    margin: 0px;
+    text-align: center;
+}
+
+.skills-container ul li{
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.skills-container ul li::before{
+    content: ': ̗̀➛';
+    margin-right: 10px;
+    color: var(--matcha);
+}
+
+
+
+/* RIGHT */
+
+
+.education-container{
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.experiences-container{
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.honors-container{
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 6;
+}
+
+.school{
+    color: var(--china);
+    font-weight: 500px;
+    font-size: 17px;
+}
+
+.desc{
+    text-indent: 20px;
+    margin-bottom: 15px;
+}
+
+
+
+.section-title{
+    color: var(--china);
+    font-size: 18px;
+    font-weight: 25px;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.role{
+    color: var(--matcha);
+    font-size: 17px;
+    padding-top: 10px;
+}
+
+.year{
+    color: var(--rose);
+    font-style: italic;
+    text-indent: 20px;
+}
+
+.experiences-container ul{
+    list-style-type: circle;
+}
+
+.bullet-list li {
+  margin-left: 50px;
+}
+
+.honortitle{
+    margin-top: 10px;
+}
+
+.honoryear{
+    color: var(--china);
+    font-style: italic;
+}
+
+.downloadbtn{
+    display: inline-block;
+    font-family: 'beckan', sans-serif;
+    font-size: 20px;
+    color: #8B9B78; 
+    background: transparent;
+    border: 3px solid #EEB9B9;
+    border-radius: 30px;
+    padding: 10px 30px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: 55px;
+}
+
+.downloadbtn:hover{
+    color: var(--hot-hot-pink);
+    background: var(--light-pink);
+}
+
+@media (max-width: 768px) {
+    .resume {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .profile-container {
+        padding: 20px 0;
+    }
+
+    .profile-img {
+        display: inline-block;
+    }
+
+    .summary-container,
+    .contacts-container,
+    .skills-container,
+    .education-container,
+    .experiences-container,
+    .honors-container {
+        width: 100%;
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .skills-container ul {
+        padding: 10px;
+    }
+
+    .skills-container ul li {
+        margin-left: 0;
+    }
+
+    .bullet-list li {
+        margin-left: 25px;
+    }
+
+    .uhm {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .school,
+    .section-title,
+    .role,
+    .year,
+    .honortitle,
+    .honoryear {
+        font-size: 15px;
+    }
+
+    .downloadbtn {
+        font-size: 16px;
+        padding: 8px 20px;
+        margin: 0 auto;
+        display: block;
+    }
+}

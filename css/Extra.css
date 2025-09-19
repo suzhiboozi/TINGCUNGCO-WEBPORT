@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+
+@font-face {
+    font-family: "Genty";
+    src: url("../font/GentyDemo-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Beckan";
+    src: url("../font/Beckan-Personal.otf") format("opentype");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+:root{
+
+    /* Color */
+    --primary-color: #fbd9cd;
+    --light-color: #FFF6E5;
+    --hot-pink: #e27a9d;
+    --light-pink: #f4b9bc;
+    --rose: #B86B77;
+    --china: #a84c66;
+    --hot-hot-pink: #d96a8e;
+    --light-green: #cfdfc4;
+    --matcha: #90b17a;
+
+    /* font size */
+    --font-size-s: 0.9rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.12rem;
+    --font-size-l: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.3rem;
+
+    /* font weight */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* woah*/
+    --site-max-width: 1600px;
+
+}
+
+body{
+    background-color: #FFF6E5;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bub{
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    width: 30rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem auto;
+}
+
+h1{
+    font-family: "sacramento", cursive;
+    font-size: 7rem;
+    color: var(--hot-hot-pink);
+}
+
+.fird{
+    transform: translateY(40px);
+}
+
+.yuhp{
+    transform: translateY(-35px);
+}
+
+.link{
+    text-decoration: none;
+    display: inline;
+    color: inherit;
+}
+
+.main{
+    position: relative;
+    width: 100%;
+    margin: 2rem auto;
+}
+
+.foldcont{
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    transform: translateY(-30px);
+}
+
+.folditem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foldd,
+.foldv,
+.foldm,
+.folds{
+    width: 300px;
+    height: 200px;
+    border-radius: 5px 25px 25px 25px;
+    filter: drop-shadow(0 0 0.75rem grey);
+    background: var(--light-green);
+    position: relative;
+    transition: transform 0.3 ease;
+}
+
+.foldd,
+.folds{
+    transform: translateY(-3rem);
+}
+
+.foldv{
+    transform: translateY(3rem);
+}
+
+.foldd:hover,
+.folds:hover{
+    transform: translateY(-3rem) scale(1.1);
+}
+
+.foldv:hover{
+    transform: translateY(3rem) scale(1.1);
+}
+
+.foldd::before,
+.foldv::before,
+.foldm::before,
+.folds::before{
+    content:  '';
+    position: absolute;
+    top: -18px;
+    width: 200px;
+    height: 25px;
+    background:#b9cdac;
+    border-radius: 25px 0 0 0;
+    clip-path: path('M 0 0 L 160 0 C 185 2, 175 16, 200 18 L 0 50 z');
+}
+
+.foldlabb{
+    transform: translateY(40px);
+}
+
+.foldlaba{
+    transform: translateY(-50px);
+}
+
+p{
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #d96a8e;
+    margin: 30px;
+}
+
+@media screen and (max-width:768px){
+
+  .bub{
+    width: 25rem;
+  }
+
+    .foldcont{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        transform: none;
+    }
+
+    .foldd,
+    .foldv,
+    .foldm,
+    .folds{
+        transform: none;
+
+    }
+
+    .folditem{
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .foldd:hover,
+    .folds:hover,
+    .foldv:hover{
+        transform: none;
+    }
+
+    .foldlaba{
+        transform: translateY(-10px);
+    }
+
+    .foldlabb{
+        transform: translateY(1px);
+    }
+
+}
